@@ -22,7 +22,7 @@
 //   s consists of English letters, digits, symbols and spaces.
 
 fn main() {
-    assert!(length_of_longest_substring("abcabcbb".to_string()), 3);
+    assert_eq!(length_of_longest_substring("abcabcbb".to_string()), 3);
 }
 
 pub fn length_of_longest_substring(s: String) -> i32 {

@@ -16,7 +16,9 @@
 //   s consist of only digits and English letters.
 
 fn main() {
-    println!("{}", longest_palindrome("bb".to_string()));
+    assert_eq!("bab".to_string(), longest_palindrome("babad".to_string()));
+    assert_eq!("bb".to_string(), longest_palindrome("cbbd".to_string()));
+    assert_eq!("bb".to_string(), longest_palindrome("bb".to_string()));
 }
 
 pub fn longest_palindrome(s: String) -> String {

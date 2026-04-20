@@ -26,7 +26,8 @@
 use std::iter::Peekable;
 
 fn main() {
-    println!("{}", find_median_sorted_arrays(vec![1,3], vec![2]));
+    assert_eq!(2.0, find_median_sorted_arrays(vec![1,3], vec![2]));
+    assert_eq!(2.5, find_median_sorted_arrays(vec![1,2], vec![3,4]));
 }
 
 pub fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
